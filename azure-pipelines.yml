@@ -7,8 +7,8 @@ variables:
 stages:
 - stage: 'Build'
   displayName: 'Build the web application'
-  jobs: 
-  - job: 'Build' 
+  jobs:
+  - job: 'Build'
     displayName: 'Build job'
     pool:
       vmImage: 'ubuntu-16.04'
@@ -63,4 +63,4 @@ stages:
         zipAfterPublish: true
 
     - publish: '$(Build.ArtifactStagingDirectory)'
-      artifact: drop      
+      artifact: drop
